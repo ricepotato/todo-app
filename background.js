@@ -9,7 +9,7 @@ function setImagePositionCenter(image){
     const left = (body.clientWidth - width) / 2;
     const top = (body.clientHeight - height) / 2;
     image.style.left = `${left}px`;
-    image.style.top = `${top}px`;
+    image.style.top = "0px";
 }
 
 function handleImageLoad(event){
