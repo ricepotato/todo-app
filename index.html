@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Something</title>
+        <title>Todo JS App</title>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Fredoka+One|Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="js-clock">
-            <h1 class="js-title">00:00</h1>
+        <div class="todo-conatiner">
+            <div class="todo-box">
+                <div class="js-clock clockContainer">
+                    <h1 class="js-title">00:00</h1>
+                </div>
+                <div class="form-container">
+                    <div class="greetingsContainer">
+                        <form class="js-form form">
+                            <input class="input-form" type="text" placeholder="What is your name?" />
+                        </form>
+                        <h4 class="js-greetings greetings"></h4>
+                    </div>
+                    <div>
+                        <form class="js-toDoForm">
+                            <input class="input-form" type="text" placeholder="Write a to do" />
+                        </form>
+                    </div>
+                </div>
+                <ul class="js-toDoList todoList">
+                </ul>
+                <div class="weatherContainer">
+                    <span class="js-weather"></span>
+                </div>
+            </div>
         </div>
-        <form class="js-form form">
-            <input type="text" placeholder="What is your name?" />
-        </form>
-        <h4 class="js-greetings greetings"></h4>
-        <form class="js-toDoForm">
-            <input type="text" placeholder="Write a to do" />
-        </form>
-        <ul class="js-toDoList">
-        </ul>
-        <span class="js-weather"></span>
+        
         <script src="clock.js"></script>
         <script src="greeting.js"></script>
         <script src="todo.js"></script>

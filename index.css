@@ -1,18 +1,104 @@
 body {
-    background-color: #95a5a6;
+    background-color: black;
+    font-family:  'Fredoka One', 'Nanum Pen Script', sans-serif;
 }
-
 
 .form {
     display: none;
 }
 
 .greetings{
+    margin-top:20px;
     display: block;
 }
 
 .showing{
     display: block;
+}
+
+.todo-conatiner{
+    padding: 120px 0px;
+    margin: 0px auto 0px auto;
+    width: 650px;
+}
+
+.todo-box{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.5);
+}
+
+.js-title{
+    text-align: center;
+    color:white;
+    font-size: 120px;
+}
+
+h4.greetings{
+    text-align: center;
+    font-size: 68px;
+    padding: 0px;
+    color:white;
+}
+
+.form-container{
+    text-align: center;
+    margin-top:20px;
+}
+
+.form-container div{
+    margin-top:15px;
+}
+
+.input-form{
+    font-family: 'Nanum Pen Script';
+    font-size: 24px;
+    width:500px;
+    height:40px;
+    font-family: 'Fredoka One';
+    border: 0;
+    outline: 0;
+    background-color:transparent;
+    border-bottom: 2px solid white;
+    color:white;
+}
+
+.input-form::placeholder {
+    color: #ababab;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+}
+
+.todoList{
+    width: 500px;
+    margin: 25px auto;
+    color:white;
+    font-size: 28px;
+}
+
+.todoList li{
+    margin: 10px 0px;
+}
+
+.btn-remove {
+    color:white;
+    border: 2px solid white;
+    outline: 0;
+    background-color:transparent;
+    font-size:18px;
+}
+
+.btn-remove:hover {
+    font-weight: bolder;
+}
+
+.btn-remove:hover {
+    font-weight: bolder;
+}
+
+.weatherContainer {
+    font-size: 22px;
+    color:white;
+    text-align: right;
 }
 
 @keyframes fadeIn{
@@ -28,9 +114,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: -1;
     animation: fadeIn .5s linear;
 }
-
